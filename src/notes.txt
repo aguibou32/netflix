@@ -1,0 +1,17 @@
+firebase login // If this does not work, you have to install the firebase tools first, so you run the following command in
+that case 
+
+npm install -g firebase-tools
+
+firebase login // does not work, une firebase login --interactive
+
+firebase init 
+
+firebase deploy 
+
+
+TO DEPLOY (DAY 2)
+
+When we get to the using firebase part, we have to add firebase. To start, we have to install it first
+
+npm install firebase

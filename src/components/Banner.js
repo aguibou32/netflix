@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Banner.css";
+import axios from "../axios";
+import requests from "../Requests";
 
 function Banner() {
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(requests.fetchingNetflixOriginals);
+      setMovie(
+        request.data.results[
+          Math.floor(Math.random() * request.data.results.length - 1)
+        ]
+      );
+      return request;
+    }
+
+    fetchData();
+  }, []);
+
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   };
@@ -10,29 +28,19 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://www.fusioninformatics.com/images/famous-app/netflix-banner.jpg')`,
+        backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
         backgroundPosition: "center center",
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
           <h1 className="banner__description">
-            {truncate(
-              ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-            molestias autem vitae excepturi, illo id beatae rem reprehenderit ad
-            maxime veritatis, ex aut, similique ipsam qui cum sint corrupti eum.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            consequatur maiores ea voluptate in perferendis, illum asperiores
-            eum necessitatibus nesciunt, nobis doloribus voluptatibus quo. Neque
-            sunt quisquam delectus velit minima. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Consectetur quisquam reiciendis est
-            totam animi, rerum minus! Autem animi, blanditiis velit aliquam enim
-            sunt fuga consequatur. Harum officiis totam doloremque quae.`,
-              150
-            )}
+            {truncate(`${movie?.overview}`, 120)}
           </h1>
         </div>
       </div>

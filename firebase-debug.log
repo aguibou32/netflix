@@ -1,0 +1,49 @@
+[debug] [2021-05-09T11:37:26.862Z] ----------------------------------------------------------------------
+[debug] [2021-05-09T11:37:26.865Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Barry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init [Hosting]
+[debug] [2021-05-09T11:37:26.865Z] CLI Version:   9.10.2
+[debug] [2021-05-09T11:37:26.865Z] Platform:      win32
+[debug] [2021-05-09T11:37:26.865Z] Node Version:  v14.16.1
+[debug] [2021-05-09T11:37:26.866Z] Time:          Sun May 09 2021 13:37:26 GMT+0200 (South Africa Standard Time)
+[debug] [2021-05-09T11:37:26.866Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-09T11:37:26.875Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-09T11:37:26.875Z] > authorizing via signed-in user (aguibou32@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Barry\Desktop\React\netflix
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-09T12:00:28.349Z] ----------------------------------------------------------------------
+[debug] [2021-05-09T12:00:28.351Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Barry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-09T12:00:28.352Z] CLI Version:   9.10.2
+[debug] [2021-05-09T12:00:28.352Z] Platform:      win32
+[debug] [2021-05-09T12:00:28.352Z] Node Version:  v14.16.1
+[debug] [2021-05-09T12:00:28.353Z] Time:          Sun May 09 2021 14:00:28 GMT+0200 (South Africa Standard Time)
+[debug] [2021-05-09T12:00:28.353Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-09T12:00:28.362Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-09T12:00:28.362Z] > authorizing via signed-in user (aguibou32@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Barry\Desktop\React\netflix
+
