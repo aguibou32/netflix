@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import HomeScreen from "./components/screens/HomeScreen";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import LoginScreen from "./components/LoginScreen";
 
 function App() {
   const user = null;
@@ -9,7 +10,7 @@ function App() {
     <div className="app">
       <Router>
         {!user ? (
-          <Login />
+          <LoginScreen />
         ) : (
           <Switch>
             <Route path="/" exact>
